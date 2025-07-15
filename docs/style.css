@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: black;  /* make background black */
+  color: #87CEFA;           /* light blue text */
+}
+
+input, button {
+  padding: 8px;
+  margin: 5px;
+}
+
+.account {
+  background: #222;         /* dark gray cards for contrast */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* also make inputs and buttons stand out on dark bg */
+input, button {
+  background: #333;
+  color: #87CEFA;
+  border: 1px solid #87CEFA;
+}
+  
