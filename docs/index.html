@@ -1,23 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Banking System</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Banking System</title>
+    <style>
+        body {
+            background-color: black;
+            color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+        input, button {
+            margin: 5px;
+            padding: 5px;
+            background: #111;
+            color: lightblue;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #222;
+        }
+        .account, .transaction {
+            border: 1px solid lightblue;
+            border-radius: 8px;
+            padding: 8px;
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Banking System</h1>
+    <h1>Banking System</h1>
 
-  <div>
-    <input type="text" id="accountName" placeholder="Account name (letters only)">
-    <input type="text" id="initialBalance" placeholder="Initial balance">
-    <input type="text" id="pin" placeholder="4-digit PIN">
+    <h3>Create Account</h3>
+    <input id="nameInput" type="text" placeholder="Name (letters)">
+    <input id="balanceInput" type="text" placeholder="Initial Balance">
+    <input id="pinInput" type="text" placeholder="PIN (4 digits)">
     <button onclick="createAccount()">Create Account</button>
-  </div>
 
-  <h2>Accounts</h2>
-  <div id="accountsList"></div>
+    <h3>Actions</h3>
+    <button onclick="editAccount()">Edit Account</button>
+    <button onclick="withdrawOrDeposit()">Withdraw/Deposit</button>
+    <button onclick="deleteAccount()">Delete Account</button>
+    <button onclick="showTransactions()">Show Transactions</button>
 
-  <script src="script.js"></script>
+    <h2>Accounts</h2>
+    <div id="accountList"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
