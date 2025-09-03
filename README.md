@@ -21,3 +21,10 @@ A mini programming project I built in C (the header, main, and banking file), th
  
 # Project Link
 https://dylanh-2.github.io/Bank-Managment-System/
+
+# Test Compile Instructions
+   Type all in a terminal to run locally
+   * Type in "gcc main.c banking.c -o bank"
+   * Next "./bank"
+
+
