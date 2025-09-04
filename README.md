@@ -20,8 +20,7 @@ A mini programming project I built in C (the header, main, and banking file), th
  * I wanted to make a C program from the start for fun and reinforce important concepts  
  
 # Project Link
-https://dylanh-2.github.io/Bank-Managment-System/
-
+https://dylanh-2.github.io/Bank-Management-System/
 # Test Compile Instructions
    Type all in a terminal to run locally
    * Type in "gcc main.c banking.c -o bank"
